@@ -8,7 +8,6 @@ function getQuestionPart(phrases) {
             for (var k = j; k < phrases[i].length; k++) {
                 var index = commonWords.findIndex(function (word) { return word === phrases[i].substring(j, k + 1); });
                 if (index != -1) {
-                    console.log(phrases[i].substring(j, k + 1));
                     array.push(phrases[i].substring(j, k + 1));
                 }
             }

@@ -9,7 +9,6 @@ function getQuestionPart(phrases: string[]) {
             for (var k = j ; k < phrases[i].length ; k++) {
                 const index: any = commonWords.findIndex(word => word ===  phrases[i].substring(j, k + 1));
                 if (index != -1) {
-                    console.log(phrases[i].substring(j, k + 1));
                     array.push(phrases[i].substring(j, k + 1));
                 }
             }
